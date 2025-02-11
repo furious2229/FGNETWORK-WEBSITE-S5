@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[FG NETWORK]</title>
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1022158257357324349/1338813129793998869/WEB_SERVER_ICON.png?ex=67ac7264&is=67ab20e4&hm=d0affabfca4939d6d57cc6876a31acb29efa6e49291b77c04fb732475772910d&">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="https://cdn.discordapp.com/attachments/853134858557456395/1338872836814536846/IMG_20250211_193208.png?ex=67aca9ff&is=67ab587f&hm=067147bff6acd00e82a2c41f1611d93229822ad6bc4bb129dc2879c8a90443e7&" alt="logo"></a>
+      <a href="https://minecraft-server.net/details/FGNETWORK/" class="desktop_navbar_link">Vote</a>
+      <a href="#discord" class="desktop_navbar_link scroll">Community</a>
+      <a href="#about" class="desktop_navbar_link scroll">Staff</a>
+      <div class="desktop_navbar_link2_div">
+          <a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
+      </div>
+    </nav>
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="https://cdn.discordapp.com/attachments/853134858557456395/1338872836814536846/IMG_20250211_193208.png?ex=67aca9ff&is=67ab587f&hm=067147bff6acd00e82a2c41f1611d93229822ad6bc4bb129dc2879c8a90443e7&" alt="logo"></a>
+      <div id="mobile_navbar_links">
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://minecraft-server.net/details/FGNETWORK/">Vote</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Community</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">Staff</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Join Us</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+        </script>
+    </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+          <img class="main1_logo" src="https://media.discordapp.net/attachments/1046664638579875841/1338818661670195210/Untitled.png?ex=67ac778a&is=67ab260a&hm=ad2a392af40e2c3dbe61557dab95da0ceadfcf875397a95534d3b51ce7d64b73&=&format=webp&quality=lossless&width=477&height=539" alt="FG NETWORK">
+        </a>
+        <div class="main1_description">
+          <a>FG NETWORK S5,<br>BEST</a>
+          <a class="main1_actcent">PUBLIC SMP LIFESTEAL / SURVIVAL ETC</a><a>.</a>
+        </div>
+        <div class="main1_ipcopier_div">
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">play.fgnetwork.site</span>
+            <br>
+            <span class="main1_ipcopier_text2">Click to copy</span>
+          </button>
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+            ("play.example.com");
+                }
+            $(document).ready(function() {
+            $('.main1_ipcopier').click(function() {
+                var popup = $('<div>', { class: 'main1_popup' })
+                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
+                $(this).after(popup);
+                setTimeout(function() {
+                popup.remove();
+                }, 1000);
+            });
+            });
+        </script>
+        </div>
+        <a href="#more" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="https://cdn.discordapp.com/attachments/979424404360540161/1338888800692211733/downarrow.png?ex=67acb8dd&is=67ab675d&hm=2c79584b5aa4a8ad8dc66ca666a0040a4a34f47221b1a046f4d0ed2bc2bf4210&">
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+      </div>
+      <div id="more"></div>
+      <div class="main2">
+        <a class="headline">What we have</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="https://cdn.discordapp.com/attachments/1046664638579875841/1338830314348478524/Lifesteal_Logo.png?ex=67ac8265&is=67ab30e5&hm=e63ff5175f004905399265a0fc3af97375f9543713b99d62aa610105e2907650&">
+            <a class="main2_feature_headline">LifeSteal</a>
+            <a class="main2_feature_text">Minecraft Lifesteal is a unique game mode or plugin where players can steal health from others</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="https://cdn.discordapp.com/attachments/1046664638579875841/1338836557167202324/01J040GGTAH4CE9HMXA43YY8DJ.png?ex=67ac8835&is=67ab36b5&hm=748e26524c02f791277ad141ca3ae8fa043653b5a4d62a4ee73203475061586e&">
+            <a class="main2_feature_headline">Custom Armors And Tools</a>
+            <a class="main2_feature_text">Enhance your experience , Stop using those boring old tools and try something new</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="https://cdn.discordapp.com/attachments/1046664638579875841/1338839647459213402/JLIJqyhbWNldqEFB.png?ex=67ac8b16&is=67ab3996&hm=e48e0412f296b4932b7707bc80f526c17ad11c9883165f8a0ca24abce12c1bb4&">
+            <a class="main2_feature_headline">Custom Crates</a>
+            <a class="main2_feature_text">Try out your luck to get some godly items!</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="https://cdn.discordapp.com/attachments/1046664638579875841/1338840671146217503/6cd6f4aa12a6075185b62f716c96e522febc0ab4.png?ex=67ac8c0a&is=67ab3a8a&hm=07d17bb9359cdd7fca76f866ef626793198fee40a6677396f678a483473a83c9&">
+            <a class="main2_feature_headline">Rank System</a>
+            <a class="main2_feature_text">Acquire more power to conquer the Minecraft world with better ranks</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="https://cdn.discordapp.com/attachments/1046664638579875841/1338842557060218950/Enchantments_Thumbnail_0.jpg?ex=67ac8dcc&is=67ab3c4c&hm=6b579c314e63345e237fd2a205541b0e47a0520855535a464428220073e0d044&">
+            <a class="main2_feature_headline">Custom Enchants</a>
+            <a class="main2_feature_text">Bored with old enchants? We got crazy and destructible enchants! Gear up and feel the power of destruction</a>
+          </div>
+        </div>
+      </div>
+      <div id="discord"></div>
+      <div class="main4">
+        <a class="headline">Join the Discord</a>
+        <div class="main4_dc_div">
+          <iframe class="main4_dc_widget" src="https://cdn.discordapp.com/attachments/1046664638579875841/1338825357356302377/Untitled_2.png?ex=67ac7dc7&is=67ab2c47&hm=e8d87f74563c2f9ea2eed7116c9e3cfe5945ccb14c142799961f6ce9bb7e26c0&" width="350" height="369" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <div class="main4_dc_description_div">
+            <a class="main4_dc_description_title">Let's talk!</a>
+            <a class="main4_dc_description"> ・Meet other players <br> ・Ask questions <br> ・Get notified about updates <br> ・Give feedback  <br><br> &amp; more </a>
+            <a href="https://discord.gg/cVk3FcEXVS" class="main4_dc_button_a">
+              <div class="main4_dc_button">Join</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="about"></div>
+      <div class="main5">
+        <a class="headline">Who we are</a>
+        <div class="main5_admin_div">
+          <div class="main5_admins_div main5_admins_dev_type2">
+            <img class="main5_admins_img" alt="admin member img" src="https://cdn.discordapp.com/attachments/1046664638579875841/1338829523680100363/ad2aabf9522236eb28720c4c66afda43.webp?ex=67ac81a8&is=67ab3028&hm=9a045df74e88456942074f785e6982cc73f7c675f0bda341397a1bdf9a1cfa26&">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_owner">[Owner]</a>
+              <a class="main5_admins_description_title" href="https://example.com">TEAMFGYTLEADER</a>
+              <a class="main5_admins_description"><font color="red">[Owner]</font><br>Founder and the developer of the server and has a YouTube channel named as TEAMFGYT2.O <br><a href ="https://www.youtube.com/@teamfgyt2.o" Title="A YouTube Link">Click to visit the YouTube channel </a></a>
+            </div>
+          </div>
+          <div class="main5_admins_div main5_admins_dev_type1">
+            <img class="main5_admins_img" alt="admin member img" src="https://cdn.discordapp.com/attachments/1205480439213592651/1338844878083461202/PicsArt_11-27-07.02.33.jpg?ex=67ac8ff5&is=67ab3e75&hm=9d4775a6b21217ad516b615af4f01fdf8bc2358d2a497b5555820e45d0f26400&">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">[Admin]</a>
+              <a class="main5_admins_description_title" href="https://example.com">GMR PLAYS</a>
+              <a class="main5_admins_description"><font color="#FF7722">[Admin]</font><br>Played a major role in the development of Minecraft server <br><a href ="https://www.youtube.com/@gmrplays" Title="A YouTube Link">Click to visit the YouTube channel </a></a>
+            </div>
+          </div>
+        </div>
+        <div class="main5_supporter_div">
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="https://cdn.discordapp.com/attachments/1046664638579875841/1338845642822254694/fff2b4aefd5d9899126495721ec4f518_1.jpg?ex=67ac90ab&is=67ab3f2b&hm=4d57c402e1c7fa1100970b4d755e54ebff3936c48963b116583e788efc91c1a4&">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Head Staff]</a>
+              <a class="main5_supporters_description_title">Sanidhya</a>
+              <a class="main5_supporters_description"><font color="#FFB6C1">[H.Staff]</font><br>Helped in the development of Fg Network website and will be monitoring the people in the server for suspicious activity</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="https://cdn.discordapp.com/avatars/607924253953884190/3e68b524214db9e205c3e1276dc64c53.webp?size=1024">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter"><font style= "rockwell" color="green"> <b>[Donator]</b></font></a>
+              <a class="main5_supporters_description_title"><font style= "rockwell" color=""> <b>Sujit</b></font></a>
+              <a class="main5_supporters_description"><font color="green">[Donator / Developer]</font><br>Donated a good value for our server, really appreciate it sujit bhai</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="https://yt3.googleusercontent.com/r7zzJvLv5PtAxImBx-gZaXuf2qu9OTTK_m0zu4RP6BVO8DYDXA3bV_IQhBm6QGZu-MJgBKvNsQ=s160-c-k-c0x00ffffff-no-rj">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Staff]</a>
+              <a class="main5_supporters_description_title">SLshipYT</a>
+              <a class="main5_supporters_description"><font color="#9B870C">[Staff]</font><br>A very important staff member who helped to test the server and find out bugs and glitches and will be sub monitoring players</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="https://cdn.discordapp.com/avatars/681832197992349762/38f8863dad71312f36e838946025481d.webp?size=1024">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter"><font style= "rockwell" color="green"> <b>[Donator]</b></font></a>
+              <a class="main5_supporters_description_title"><font style= "rockwell" color=""> <b>ILover</b></font></a>
+              <a class="main5_supporters_description"><font color="green">[Donator]</font><br>First donater of the server, he helped us to start our server from the beginning. Thank you so much for your support</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="https://preview.redd.it/drawing-reyna-for-my-valorant-series-v0-ndlyhokxew3b1.jpg?width=1754&format=pjpg&auto=webp&s=86e7581ab740a0856fc9a732955f8276d6eb8648">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Staff]</a>
+              <a class="main5_supporters_description_title">Ayush</a>
+              <a class="main5_supporters_description"><font color="#9B870C">[Staff]</font><br>New Staff Member</a>
+        </div>
+        </div>
+        <div class="main5_supporters_div">
+          <img class="main5_supporters_img" alt="supporters member img" src="https://media.discordapp.net/attachments/1251554424686641233/1338927812593193080/shancobrashan.png?ex=67acdd32&is=67ab8bb2&hm=f73e0a183157fa69988376a9ffa975289f7b805a0c2915725c5edb51ef442fd6&=&format=webp&quality=lossless&width=230&height=230">
+          <div class="main5_supporters_description_div">
+            <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Staff]</a>
+            <a class="main5_supporters_description_title">Cobra</a>
+            <a class="main5_supporters_description"><font color="#9B870C">[Staff]</font><br>New Staff Member</a>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div id="join"></div>
+      <div class="main3">
+        <a class="headline">How to join</a>
+        <div class="main3_join_div_div">
+          <div class="main3_join_div">
+            <a class="main3_join_title">Java</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>IP:</a>
+                <a>Version:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>play.fgnetwork.site</a>
+                <a>1.8 / 1.21.4</a>
+              </div>
+            </div>
+          </div>
+          <div class="main3_join_div">
+            <a class="main3_join_title">Bedrock</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>IP:</a>
+                <a>Port:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>play.fgnetwork.site</a>
+                <a>25589</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="copyright_div">
+      <a href="" class="copyright"></a>
+      <p>Date:11-02-2025 | Created By Fgyt®</p>
+    </footer>
+  </body>
+</html>
